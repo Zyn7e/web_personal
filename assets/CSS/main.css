@@ -1,0 +1,13 @@
+main {
+  margin: 1em 0;
+  padding: 0 3vw;
+}
+
+.presentation {
+  font-size: 1.1rem;
+  color: #5D5D5D;
+}
+
+.tecnologies-list {
+  display: flex;
+}
