@@ -1,13 +1,207 @@
-main {
-  margin: 1em 0;
-  padding: 0 3vw;
+.me-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  min-height: 70vh;
+}
+
+.profile-photo {
+  width: 300px;
+}
+
+.titles {
+  max-width: 40vw;
+}
+
+.name-title {
+  margin: 0 0 .6em;
+
+  color: #82E0AA;
+  font-size: 1.8em;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.profession-title {
+  font-size: 1.3em;
+  letter-spacing: 1px;
 }
 
 .presentation {
-  font-size: 1.1rem;
-  color: #5D5D5D;
+  margin-top: 3vh;
+}
+
+.presentation p {
+  font-size: 1.1em;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+
+/* Acerca de Mi - Actividad 2 */
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me-title {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.about-me-section {
+  display: flex;
+  margin: 1em 0 0 0; 
+}
+
+.personal-info p {
+  margin: .5em 0;
+  font-size: 1.2em;
+}
+
+.skills {
+  margin: 0 auto;
+}
+
+.skills h3 {
+  margin: 0 0 1em 0;
+  font-size: 1.5em;
 }
 
 .tecnologies-list {
   display: flex;
+  min-width: 30vw;
+}
+
+.tecnologies-list li {
+  margin: 0 auto;
+}
+
+.tecnologies-list li svg {
+  display: block;
+}
+
+/* Estilos de contact */
+
+.contact-section h2{
+  font-size: 2em;
+  font-weight: 600;
+
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact .social-media,
+.contact form {
+  width: 50%;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media p {
+  font-size: 1.5em;
+  margin: 15px auto;
+  width: 50%;
+}
+
+form {
+  margin: 1vh 0;
+  padding: 1em;
+}
+
+label {
+  letter-spacing: 2px;
+  font-size: 1.05em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  margin: .5em 0;
+  border: none;
+}
+
+input[type="submit"] {
+  font-size: 1em;
+  padding: .5em;
+  width: 100%;
+  border: none;
+  color: #000;
+  background-color: #82E0AA;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #4EC37F;
+  color: #FFF;
+}
+
+
+
+/* Estilos Responsivos */
+
+/* Moviles */
+
+@media only screen and (max-width: 600px) {
+  .me-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .profile-photo {
+    width: 200px;
+    margin-bottom: 3vh;
+  }
+
+  .titles {
+    max-width: 90vw;
+  }
+
+  .presentation p {
+    font-size: 1em;
+  }
+
+  .about-me-section {
+    flex-wrap: wrap;
+  }
+
+  .skills {
+    margin: 0;
+  }
+
+  .contact {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .contact .social-media {
+    margin: 0;
+    width: 90vw;
+    text-align: start;
+  }
+
+  .social-media p {
+    width: auto;
+    margin: 15px 0;
+  }
+
+  form {
+    min-width: 94vw;
+    padding: 0;
+  }
+
+  textarea {
+    resize: none;
+  }
 }
